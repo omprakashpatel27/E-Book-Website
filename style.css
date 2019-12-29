@@ -1,0 +1,78 @@
+.pad{
+    padding: 45px;
+    font-size:24px ;
+    font-family: monospace ;
+}
+.name{
+    padding: 45px;
+    font-size: 24px ;
+    font-family: serif ;
+}
+.txt{
+    padding: 47px;
+}
+.tab{
+    margin-top: 200px;
+}
+.font{
+    font-size: 18px;
+    font-family: monospace;
+}
+.image{
+    height: 50px;
+    width:50px;
+}
+.row {
+  display: flex;
+}
+.column {
+  flex: 33.33%;
+  padding: 15px;
+}
+.link{
+    text-decoration: none;
+    padding: 15px;
+    color: black;
+    font-family: sans-serif;
+    font-size: medium;
+}
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+.bottom-left {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+}
+.centered {
+  position: absolute;
+  top: 55%;
+  left: 51%;
+  transform: translate(-50%, -50%);
+}
+p{
+  color: black;
+}
+h1{
+  color: black;
+}
+h2{
+  color: black;
+}
+h3{
+  color: black;
+}
+h4{
+  color: black;
+}
+h6{
+  color: black;
+}
+.colr{
+  background-color: black;
+}
+.txtcolr{
+  color: white; 
+}

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>BOOKSTORE</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+  <script src ="Javascript.js"></script>
+<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+   <script src="bootstrap/js/jquery.js"></script>
+   <script src="popper.min.js"></script>
+   <script src="bootstrap/js/bootstrap.min.js"></script>
+</head>
+<body style="background-image: url('https://static.vecteezy.com/packs/media/components/home/masthead/img/lavakidneys_800x400@2x-2db5e5a0c944e2b16a11a18674570f76.jpg')">
+<div>
+
+<nav class="navbar navbar-expand-lg bg-light navbar-light fixed-top ">
+
+     <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon "></span>
+     </button>
+   
+  <!-- Links -->
+  <div class="collapse navbar-collapse colr" id="collapsibleNavbar">
+  <ul class="navbar-nav">
+    <li class="nav-item pad">
+      <a class="navbar-text name" style="color: white;">BOOKSTORE</a>
+    </li>
+    <li class="nav-item pad">
+      <a class="nav-link" style="color: white;" href="index.html">Home</a>
+    </li>
+    <li class="nav-item pad">
+      <a class="nav-link active" style="color: white;" href="#">E-Book</a>
+    </li>
+    <li class="nav-item pad">
+      <a class="nav-link" style="color: white;" href="#">Login</a>
+    </li>
+    <li class="nav-item pad">
+      <a class="nav-link" style="color: white;" href="#about">About</a>
+    </li>
+    <li class="nav-item txt">
+        <form class="form-inline " action="/action_page.php">
+        <label for="text">
+         <input type="text" class="form-control mr-sm-2" placeholder="Enter Book Name " id="email">
+        </label>
+        <button type="submit" class="btn btn-primary ">Search</button>
+        </form>
+    </li>
+    </ul>
+  </div>
+</nav>
+</div>
+
+<div class="tab">
+    <div class="container">
+  <h2 style="color: black;">Book List</h2>
+  <p >We have the following books available for you to read</p>
+  <table class="table table-hover" style="color:black">
+    <thead>
+      <tr style="color:black; font-weight:bold;">
+        <th>Book Name</th>
+        <th>Author</th>
+        <th>Rating</th>
+        <th>Read</th>
+      </tr>
+    </thead>
+    <tbody >
+      <script language="javascript" type="text/javascript">
+        book = localStorage.getItem("book_name");
+        var book_name = JSON.parse(book);
+
+        Author = localStorage.getItem("author_name");
+        var author = JSON.parse(Author);
+
+        Rating = localStorage.getItem("rating_name");
+        var rating = JSON.parse(Rating);
+
+        Read = localStorage.getItem("read_name");
+        var read = JSON.parse(Read);
+      for (var i=0; i< 10; i++) {
+         document.write("<tr style='color:black; font-weight:bold;'>");
+         document.write("<td>"+book_name[i]+"</td>");
+         document.write("<td>"+author[i]+"</td>");
+         document.write("<td>"+rating[i]+"</td>");
+         document.write("<td>"+"<a style='color: white' href='#'>"+read[i]+"</a>"+"</td>");
+         document.write("</tr>");
+         }
+     </script>
+    </tbody>
+  </table>
+</div>
+</div>
+
+<div class="container">
+<p id = "feed" class="font txt "></p>
+</div>
+
+<div class="input-group mb-3 input-group-sm container">
+      <div class="input-group-prepend">
+       <p >Give us feedback so that we can improve our services: </p>
+       <button type="button" class="btn btn-outline-secondary dropdown-toggle"  style ="margin-bottom: 10px; margin-left: 20; color:blanchedalmond;" data-toggle="dropdown">
+      FeedBack
+    </button>
+    <div class="dropdown-menu">
+      <button class="dropdown-item" onclick="feedback()">Good</button>
+      <button class="dropdown-item" onclick="feedback1()">Need Upgradation</button>
+      <button class="dropdown-item" onclick="feedback2()">Not found required book</button>
+    </div>
+  </div>
+  </div>
+
+<div class="container jumbotron" style="background-color: white">
+  <h1 id="about" style="color: black;" >About</h1>
+  <p class="name">BookStore is a platform whereyou can access E-Books available here.<br>
+    In this world where all the stuffs available online, BookStore provides books online.<br>
+    We have the limited available e-books, but this limitation surely updated in future.<br>
+    BookStore encourage people to read the different books with ease of access to the e-book.<br>
+  </p>
+  <h3 style="color: black;" >Contact Us</h3>
+  <div class="row">
+  <div class="column">
+    <a href="#" class="link"><img src="images/71VQR1WetdL._SY355_.jpg" alt="" class="image img-fluid">Ebook_BookStore</a>
+  </div>
+  <div class="column">
+    <a href="#" class="link"><img src="images/linkedIn.png" alt="" class="image img-fluid">BOOKSTORE</a>
+  </div>
+  <div class="column">
+    <a href="#" class="link"><img src="images/phone.jpg" alt="" style = " height: 50px; width:90px;" class="img-fluid">+91 884521001123</a>
+  </div>
+  </div>
+  <h6 style = "text-align: center; margin-top:25px;"> Created By - Omprakash Patel</h6>
+</div>
+
+</body>
+</html>
