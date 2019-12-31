@@ -1,11 +1,11 @@
 function feedback(){
-    return document.getElementById("feed").innerHTML = " Thanks for Your Feedback. We delightful to know that you like our BookStore."
+    return document.getElementById("feed").innerHTML = " Thanks for Your Feedback. We are delightful to know that you like our BookStore."
 };
 function feedback1(){
     return document.getElementById("feed").innerHTML = " Thanks for Your Feedback. We try to upgrade our services for sure in future ."
 };
 function feedback2(){
-    return document.getElementById("feed").innerHTML = " Thanks for Your Feedback. We apology that you won't found e-boook. We will try to add your e-book."
+    return document.getElementById("feed").innerHTML = " Thanks for Your Feedback. We apologize that you won't found e-boook. We will try to add your e-book."
 };
 function feedback3(){
     return document.getElementById("feed").innerHTML = " Thanks for Your Feedback \n Sorry for Inconveince, We defenitely Resolve Your Issue in Future."
